@@ -1,6 +1,6 @@
 package exercise2;
 
-class Monkeys {
+/* class Monkeys {
 
     boolean monkeyBusiness(Monkey[] monkeys) {
     //BONUS EXERCISE
@@ -25,6 +25,18 @@ class Monkeys {
         System.out.println(monkeyList);
         
     }
+} */
 
-    
-}
+class Monkeys {
+
+    boolean monkeyBusiness(Monkey[] monkeys) {
+        int isSmiling = 0;
+        int isFrowning = 0;
+
+        for(Monkey newMonkey : monkeys )
+            if (newMonkey.smile){
+                isSmiling++;
+            }
+            else isFrowning++;
+
+        return isSmiling >= isFrowning; //if majority are not smiling, returning false. if it's a tie, return true
