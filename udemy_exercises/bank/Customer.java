@@ -3,11 +3,13 @@ package bank;
         import java.util.ArrayList;
 
 public class Customer {
-    private String name;
     private ArrayList<Double> transactions;
+    private final String firstName;
+    private final String lastName;
 
-    public Customer(String name, double initialAmount){
-        this.name = name;
+    public Customer(String firstName, String lastName, double initialAmount){
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.transactions = new ArrayList<Double>();
         addTransaction(initialAmount);
     }
@@ -17,7 +19,7 @@ public class Customer {
     }
 
     public String getName(){
-        return name;
+        return String.format("%s %s", firstName, lastName);
     }
 
     public ArrayList<Double> getTransactions(){

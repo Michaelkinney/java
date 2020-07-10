@@ -1,5 +1,3 @@
-package exercise2;
-
 /* class Monkeys {
 
     boolean monkeyBusiness(Monkey[] monkeys) {
@@ -27,16 +25,15 @@ package exercise2;
     }
 } */
 
-class Monkeys {
-
-    boolean monkeyBusiness(Monkey[] monkeys) {
-        int isSmiling = 0;
-        int isFrowning = 0;
-
-        for(Monkey newMonkey : monkeys )
-            if (newMonkey.smile){
-                isSmiling++;
-            }
-            else isFrowning++;
-
-        return isSmiling >= isFrowning; //if majority are not smiling, returning false. if it's a tie, return true
+//class Monkeys {
+//
+//    boolean monkeyBusiness(Monkey[] monkeys) {
+//        int isSmiling = 0;
+//        int isFrowning = 0;
+//
+//        for (Monkey newMonkey : monkeys)
+//            if (newMonkey.smile) {
+//                isSmiling++;
+//            } else isFrowning++;
+//
+//        return isSmiling >= isFrowning; //if majority are not smiling, returning false. if it's a tie, return true
